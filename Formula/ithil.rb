@@ -11,7 +11,7 @@ class Ithil < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lvcasx1/ithil/releases/download/v0.1.1/ithil_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "6ddc62bf7007dd9d3d3c55867cba59f757dc760734304977e7c3397081b6a241"
+      sha256 "bf3bcac716ab0eb9547302a9b9da42f0477d9c13921ffcb89d64360a619329d2"
 
       def install
         bin.install "ithil"
@@ -20,7 +20,7 @@ class Ithil < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/lvcasx1/ithil/releases/download/v0.1.1/ithil_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "1554a3ed263ab0034cee686b70bd51a9ebec98aa302852b9be61d32e50713c0e"
+      sha256 "cc8e1c6f55ee6334c123280af68aa8a1c89981098d13d04c60640fbd1159b094"
 
       def install
         bin.install "ithil"
@@ -32,7 +32,7 @@ class Ithil < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/lvcasx1/ithil/releases/download/v0.1.1/ithil_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "8d3a2f28ec0ee5a59acf0f36ffd6bbd55d496682176fed385efca7f5657cce9e"
+      sha256 "2185657ee69124969532a19a0056ce53f0e4277f2b96bf61a8296ddc90b754b1"
       def install
         bin.install "ithil"
         (etc/"ithil").install "config.example.yaml"
@@ -40,7 +40,7 @@ class Ithil < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/lvcasx1/ithil/releases/download/v0.1.1/ithil_0.1.1_Linux_arm64.tar.gz"
-      sha256 "f72078c03b9b0f7ca95c48bca299290e2f7f79e9d041d2de23da29fa9f075187"
+      sha256 "f72ef50a7908880280ebaea24358710a2e23a2ab1e3529bc65c53fb797a6a8d9"
       def install
         bin.install "ithil"
         (etc/"ithil").install "config.example.yaml"
