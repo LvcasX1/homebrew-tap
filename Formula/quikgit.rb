@@ -5,23 +5,23 @@
 class Quikgit < Formula
   desc "A GitHub repository manager with terminal user interface (TUI)"
   homepage "https://github.com/lvcasx1/quikgit"
-  version "1.0.5"
+  version "1.0.6"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lvcasx1/quikgit/releases/download/v1.0.5/quikgit_1.0.5_Darwin_x86_64.tar.gz"
-      sha256 "5b10a64f9ade3633e6918555f4715c47dc0a23bf01f9ac9715833a4ecd632d90"
+      url "https://github.com/lvcasx1/quikgit/releases/download/v1.0.6/quikgit_1.0.6_Darwin_x86_64.tar.gz"
+      sha256 "61cc460bc35f43a89a826b1d9789e8341ffe841bab905ae15c7af7db2798946b"
 
       def install
         bin.install "quikgit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lvcasx1/quikgit/releases/download/v1.0.5/quikgit_1.0.5_Darwin_arm64.tar.gz"
-      sha256 "a10aa9c734a8d336f747090a4e4c8e73a78da147b82f57404cbae188003fab32"
+      url "https://github.com/lvcasx1/quikgit/releases/download/v1.0.6/quikgit_1.0.6_Darwin_arm64.tar.gz"
+      sha256 "5be5a8026a31a57409b5f6d35bb16f13f116814239f3d0698660f21978ce19fd"
 
       def install
         bin.install "quikgit"
@@ -31,15 +31,15 @@ class Quikgit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lvcasx1/quikgit/releases/download/v1.0.5/quikgit_1.0.5_Linux_x86_64.tar.gz"
-      sha256 "ee71d496542a8f76aa10e72d40bd292100b198a9bd2d18e303df0742e7059c47"
+      url "https://github.com/lvcasx1/quikgit/releases/download/v1.0.6/quikgit_1.0.6_Linux_x86_64.tar.gz"
+      sha256 "df9d129feacde74be623d633e395ee0a44fdd2b39d5f3212e5abc96cf50470ec"
       def install
         bin.install "quikgit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lvcasx1/quikgit/releases/download/v1.0.5/quikgit_1.0.5_Linux_arm64.tar.gz"
-      sha256 "e4e707669a64719feda7a840cc540bd3acd63eaaead80b958d216916ea00fb8e"
+      url "https://github.com/lvcasx1/quikgit/releases/download/v1.0.6/quikgit_1.0.6_Linux_arm64.tar.gz"
+      sha256 "839c0cf6d90ff3644120c813654365dce52ee3362233e0d8ada7cdce7b148876"
       def install
         bin.install "quikgit"
       end
