@@ -5,13 +5,13 @@
 class Ithil < Formula
   desc "A Terminal User Interface (TUI) Telegram client built with Go and Bubbletea"
   homepage "https://github.com/lvcasx1/ithil"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lvcasx1/ithil/releases/download/v0.1.6/ithil_0.1.6_Darwin_x86_64.tar.gz"
-      sha256 "42e29fe047cdce6a1071b2db5a77ceeaac800f5eca4e454be8cda1aa07709234"
+      url "https://github.com/lvcasx1/ithil/releases/download/v0.1.7/ithil_0.1.7_Darwin_x86_64.tar.gz"
+      sha256 "cd154e1fbcfd256480e611b85eccfc1eab9f714e542542e6c7113a250913debc"
 
       def install
         bin.install "ithil"
@@ -19,8 +19,8 @@ class Ithil < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lvcasx1/ithil/releases/download/v0.1.6/ithil_0.1.6_Darwin_arm64.tar.gz"
-      sha256 "196257f709956c7a66ca4ad631e298ae1e0eac894f1cd912968ea09a9312207f"
+      url "https://github.com/lvcasx1/ithil/releases/download/v0.1.7/ithil_0.1.7_Darwin_arm64.tar.gz"
+      sha256 "99a8416f12e201f9a5ed0ffc12a82baa3dcb3dfd860536661df291ce6a5afb1b"
 
       def install
         bin.install "ithil"
@@ -31,16 +31,16 @@ class Ithil < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lvcasx1/ithil/releases/download/v0.1.6/ithil_0.1.6_Linux_x86_64.tar.gz"
-      sha256 "c2397a74988b3f412bdb39517a2a86b472b400de7526edbf7e9163070f39254d"
+      url "https://github.com/lvcasx1/ithil/releases/download/v0.1.7/ithil_0.1.7_Linux_x86_64.tar.gz"
+      sha256 "154326dc7ce00878c7f46ea7357573165b0945975156e25d8d241ba24c8ad75a"
       def install
         bin.install "ithil"
         (etc/"ithil").install "config.example.yaml"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lvcasx1/ithil/releases/download/v0.1.6/ithil_0.1.6_Linux_arm64.tar.gz"
-      sha256 "23090f59be3a37245d2151320a36a23b8b0bcf689bc7c71ad86dbf4e394c3974"
+      url "https://github.com/lvcasx1/ithil/releases/download/v0.1.7/ithil_0.1.7_Linux_arm64.tar.gz"
+      sha256 "327e235144c51bcfa82f46ca4db95619a75480b58ff9affe18ce30652fd8f44b"
       def install
         bin.install "ithil"
         (etc/"ithil").install "config.example.yaml"
