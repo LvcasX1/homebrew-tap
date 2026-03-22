@@ -7,20 +7,20 @@ class Ithil < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lvcasx1/ithil/releases/download/v0.2.2/ithil-darwin-x86_64.tar.gz"
-      sha256 "b02cd94ec1b4891f93e63d4367128b138a0d2faa6e85cad950c7a0ba0799bc6f"
+      sha256 "21d506830309734ff0e9d350a29bb8bed1ca9a840be603f47b49160bc95af86e"
     else
       url "https://github.com/lvcasx1/ithil/releases/download/v0.2.2/ithil-darwin-aarch64.tar.gz"
-      sha256 "3b9d9655ec7929207ad68ecf6f9848950994c7e22748ca21619bd3cbaf161e43"
+      sha256 "3ae6f186e26df56d95af04597993cebda1adf03c787f4a77f534f4b53000c59b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/lvcasx1/ithil/releases/download/v0.2.2/ithil-linux-x86_64.tar.gz"
-      sha256 "f03c5243c2421bddbdab094380817ba1540f34ea011bb25c3016811da8a37a0f"
+      sha256 "a0487d850e40474b12cdece24de1efa5ac7df5c836a667c4b42ca5b9013c22a6"
     else
       url "https://github.com/lvcasx1/ithil/releases/download/v0.2.2/ithil-linux-aarch64.tar.gz"
-      sha256 "d0a982e41427ac8c772fe7ff8388e512b6c70204f66010caedc4cbb5f43768e7"
+      sha256 "35f0a781fe8c7f51ce4d68f28a2580ae0fb6d652e7c94f04fef2a3c2bff36c5a"
     end
   end
 
