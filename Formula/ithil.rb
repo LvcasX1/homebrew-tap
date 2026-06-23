@@ -2,25 +2,25 @@ class Ithil < Formula
   desc "A Terminal User Interface for Telegram"
   homepage "https://github.com/lvcasx1/ithil"
   license "MIT"
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lvcasx1/ithil/releases/download/v0.5.0/ithil-darwin-x86_64.tar.gz"
-      sha256 "e68c83fa53ea21626eb67fac1f4d4e0966e032a5c96a6f69b2952e21b6e7d2b8"
+      url "https://github.com/lvcasx1/ithil/releases/download/v0.6.0/ithil-darwin-x86_64.tar.gz"
+      sha256 "a0b3f26e836776dfd607e6f1647497d3bf5ea9d6658803464586a9dee47cda45"
     else
-      url "https://github.com/lvcasx1/ithil/releases/download/v0.5.0/ithil-darwin-aarch64.tar.gz"
-      sha256 "ad69e339a6a7889394e2e82c518db96fe3ba48ddeb23eb646e8043857f7f36fa"
+      url "https://github.com/lvcasx1/ithil/releases/download/v0.6.0/ithil-darwin-aarch64.tar.gz"
+      sha256 "b1c9999240d537c9cd6be527fb5d589f437970bdefd991bb99afd7710777f58b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lvcasx1/ithil/releases/download/v0.5.0/ithil-linux-x86_64.tar.gz"
-      sha256 "fed1f6bc3ff8764fe2cc0b1ea02d95396656b75223c8a4acd179493355fcc68a"
+      url "https://github.com/lvcasx1/ithil/releases/download/v0.6.0/ithil-linux-x86_64.tar.gz"
+      sha256 "7590aea98b0d0c44142ed78f9b44023e8258c67f997d992b35a33c4742fd5fe0"
     else
-      url "https://github.com/lvcasx1/ithil/releases/download/v0.5.0/ithil-linux-aarch64.tar.gz"
-      sha256 "78a9205830fced19a904073a4e47210a0edf8dc076007ba6d97c12511d0a2603"
+      url "https://github.com/lvcasx1/ithil/releases/download/v0.6.0/ithil-linux-aarch64.tar.gz"
+      sha256 "715fed4af64682b441faa6f665c2632b61f9ea5f73e8409458174bf1c5aec051"
     end
   end
 
